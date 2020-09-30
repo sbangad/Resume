@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <title>Sarvesh Bangad-Resume</title>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -12,9 +11,45 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic|Raleway:400,300,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-
+    <script>
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("navbar").style.top = "0";
+        } else {
+          document.getElementById("navbar").style.top = "-60px";
+        }
+        prevScrollpos = currentScrollPos;
+      }
+    </script>
   </head>
   <body>
+    <nav id="navbar" class="navbar navbar-expand-md navbar-dark fixed-top" style="  transition: top 0.3s;  background-color:black;">
+            <a class="navbar-brand" href="#top">SARVESH</a>
+      <div class="collapse navbar-collapse" id="navbarNav" style="padding-left: 120vh;">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#about">ABOUT  </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#education">EDUCATION  </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#Projects">PROJECTS  </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#Experience">EXPERIENCE  </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#skills">SKILLS  </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#contact">CONTACT  </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   <div id="headerwrap">
     <div class="container">
       <div class="row-centered">
@@ -41,7 +76,6 @@
             </p>
           </div>
           <div class="col-lg-2">
-            <!-- <a href="https://github.com/sbangad/AgroPro"></a> -->
             <a href="Resume.pdf" download><p style="font-size:14px">DOWNLOAD PDF</p></a>
           </div>
 
@@ -51,6 +85,7 @@
   </section>
 
   <section id="education" name="education">
+    <br>
     <div class="container desc">
       <div class="row">
         <div class="col-lg-2 col-lg-offset-1">
@@ -176,7 +211,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-2 col-lg-offset-1">
-            <h5>EXPERIENCES</h5>
+            <h5>EXPERIENCE</h5>
           </div>
           <div class="col-lg-6" style="padding-top:5px">
             <p>
@@ -326,6 +361,5 @@
       <p style="text-align:center"><i class="fa fa-copyright fa-x" style="color:white"></i> <strong> Sarvesh Bangad</strong></p>
     </div>
   </section>
-
   </body>
 </html>
