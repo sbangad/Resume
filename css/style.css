@@ -91,6 +91,10 @@ sm {
   padding-left:40px;
 }
 
+.cards{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 #footer {
   background: #000;
   padding-bottom:5px;
@@ -101,4 +105,13 @@ sm {
 #footer h5, p {
   color: white;
   margin-top:10px;
+}
+
+
+.icon:hover{
+  color:rgb(180, 176, 176);
+ }
+
+.icon{
+  color:white;
 }
