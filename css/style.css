@@ -29,6 +29,10 @@ p {
   font: caption;
 }
 
+canvas{
+  filter: blur(1px);
+}
+
 #headerwrap h1 {
   font-size: 80px;
   padding-top:20vh;
