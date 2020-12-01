@@ -1,6 +1,6 @@
 let c = init("canvas"),
-  w = (canvas.width = 1518),
-  h = (canvas.height = 282);
+  w = (canvas.width =  window.innerWidth-17),
+  h = (canvas.height =  window.innerHeight-210);
 //initiation
 
 class firefly{
